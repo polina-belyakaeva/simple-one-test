@@ -1,0 +1,51 @@
+@import '../../assets/styles/__variables.scss';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease; 
+
+  &--with-shadow {
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__buttons {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: block;
+  }
+  .header__title {
+    justify-content: space-between;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+    }
+  }
+  .header__actions {
+    display: none;
+  }
+}

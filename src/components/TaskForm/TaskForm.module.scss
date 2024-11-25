@@ -1,0 +1,42 @@
+@import '../../assets/styles/__variables.scss';
+
+.form {
+  padding: 0 16px 16px;
+  display: grid;
+
+  &__title {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__fieldsGroup {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+    background-color: $background-primary;
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    &__single-line {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .form__fieldsGroup__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__title {
+    font-size: 20px;
+  }
+}

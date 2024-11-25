@@ -1,0 +1,36 @@
+@import './__variables';
+@import './__normalize';
+@import './__fonts';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; 
+  overflow: auto;
+  background-color: $background-primary;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 337px auto;
+    grid-template-rows: auto;
+  
+    &__body {
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 32px auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .app__content {
+    grid-template-columns: 56px 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .app__content {
+    grid-template-columns: 1fr;
+  }
+}

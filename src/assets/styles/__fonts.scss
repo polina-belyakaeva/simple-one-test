@@ -1,0 +1,26 @@
+$font-inter: 'Inter', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
+
+$weight-regular: 400;
+$weight-semi-bold: 600;
+
+.font-inter {
+  font-family: $font-inter;
+}
+
+.font-montserrat {
+  font-family: $font-montserrat;
+}
+
+.font-open-sans {
+  font-family: $font-open-sans;
+}
+
+.font-regular {
+  font-weight: $weight-regular;
+}
+
+.font-semi-bold {
+  font-weight: $weight-semi-bold;
+}

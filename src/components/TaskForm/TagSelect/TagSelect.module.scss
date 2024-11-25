@@ -1,0 +1,39 @@
+@import '../../../assets/styles/__variables.scss';
+
+:global {
+  .ant-select-selector {
+    background-color: $background-input !important;
+  }
+}
+
+.selectField {
+  gap: 4px;
+  width: 100%;
+  margin: 0;
+}
+
+.selectWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  gap: 4px;
+
+  .iconButton {
+    padding: 0px;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    border: 1px solid $border-nav;
+    color: $text-primary;
+    background-color: $background-primary;
+
+    &:hover {
+      color: $background-button;
+    }
+  }
+}

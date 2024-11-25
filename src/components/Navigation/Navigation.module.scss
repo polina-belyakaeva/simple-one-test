@@ -1,0 +1,80 @@
+@import '../../assets/styles/__variables.scss';
+
+.navigation {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 56px 280px;
+  max-width: 336px;
+  height: 100%;
+  background-color: $background-primary;
+  border-right: 1px solid $border-nav;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__search {
+    display: flex;
+    max-width: 280px;
+    padding: 16px;
+    border-bottom: 1px solid $border-nav;
+    background-color: $background-primary;
+    gap: 8px;
+
+    &-input {
+      width: 208px;
+      height: 32px;
+      background-color: $background-input;
+    }
+
+    &-pin {
+      width: 32px;
+      padding: 10px;
+      border: 1px solid $border-nav;
+      flex-shrink: 0;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    width: min(56px, 100%);
+    height: 100%;
+    border-right: 1px solid $border-nav;
+
+      &-tab {
+        padding: 16px;
+        width: 56px;
+        height: 56px;
+        border: none;
+      }
+  }
+
+  &__menu {
+    max-width: 280px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: $background-nav;
+    overflow-y: auto;
+
+    ul {
+      background-color: $background-nav;
+    }
+
+    &-item {
+      display: flex;
+      max-width: calc(100% - 32px);
+      gap: 8px;
+      align-items: center;
+      margin: 10px 16px;
+      background-color: $background-nav;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    grid-template-columns: 56px;
+    width: 100%;
+  }
+}

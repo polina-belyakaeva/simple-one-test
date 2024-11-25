@@ -1,0 +1,62 @@
+@import '../../assets/styles/__variables.scss';
+
+.header-top {
+  display: grid;
+  grid-template-columns: minmax(120px, auto) 1fr auto;
+  align-items: center;
+  padding: 8px 16px;
+  background: $background-primary;
+  border-bottom: 1px solid $border-nav;
+  gap: 16px;
+
+  &__logo img {
+    height: 24px;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: flex-end;
+
+    &-input {
+      width: 100%;
+      max-width: 296px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    &__username {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &__settings {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header-top {
+    grid-template-columns: auto auto;
+  }
+
+  .header-top__user {
+    justify-content: flex-end;
+  }
+  
+  .header-top__search {
+    display: none;
+  }
+
+  .header-top__logo img {
+    height: 20px;
+  }
+
+  .header-top__user__username {
+    display: none;
+  }
+}

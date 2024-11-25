@@ -1,0 +1,33 @@
+@import '../../../assets/styles/__variables.scss';
+
+.datePickerField {
+  margin: 0;
+}
+
+.datePickerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.datePickerInput {
+  flex: 1;
+  width: 100%;
+  background: $background-input;
+}
+
+.calendarButton {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $border-primary;
+  background-color: $background-primary;
+  border-radius: 4px;
+
+  &:hover {
+    color: $background-button;
+  }
+}

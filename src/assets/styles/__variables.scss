@@ -1,0 +1,34 @@
+$text-primary: #2E3238;
+$text-secondary: #5C6470;
+$text-modal-title: #0B0C0E;
+$text-inverse: #FFFFFF;
+
+$background-primary: #FFFFFF;
+$background-input: #FCFCFD;
+$background-nav: #FCFCFD;
+$background-badge: #E5F4FF;
+$background-button: #0078CF;
+
+$border-primary: #D5D8DD;
+$border-badge: #99D5FF;
+$border-nav: #F0F0F0;
+
+$nav-arrow: #ABB1BA;
+
+:export {
+  textPrimary: $text-primary;
+  textSecondary: $text-secondary;
+  text-inverse: $text-inverse;
+
+  backgroundPrimary: $background-primary;
+  backgroundInput: $background-input;
+  backgroundNav: $background-nav;
+  backgroundBadge: $background-badge;
+  backgroundButton: $background-button;
+
+  borderPrimary: $border-primary;
+  borderBadge: $border-badge;
+  borderNav: $border-nav;
+
+  navArrow: $nav-arrow;
+}
