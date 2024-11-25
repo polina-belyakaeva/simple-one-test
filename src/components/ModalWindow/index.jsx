@@ -53,7 +53,9 @@ const ModalWindow = ({ visible, onCancel, onCreate }) => {
       <div className={styles['modal__content-form']}>
         <h1>{t('modal.newEntry')}</h1>
         <FormTemplate className={styles.modal__form} onFinish={onCreate} />
-        <footer className={styles.modal__footer}>{isMobile && <ModalActions onCancel />}</footer>
+        <footer className={styles.modal__footer}>
+          {isMobile && <ModalActions onCancel={onCancel} onFinish={onCreate} />}
+        </footer>
       </div>
     </Modal>
   );
