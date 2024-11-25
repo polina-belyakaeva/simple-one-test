@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/simple-one-test/static/css/main.a909064e.css",
+    "main.js": "/simple-one-test/static/js/main.473f477c.js",
+    "static/media/avatar-header.svg": "/simple-one-test/static/media/avatar-header.ba2307d6b91a5d9923fcc32aba475919.svg",
+    "static/media/logo-header.svg": "/simple-one-test/static/media/logo-header.afed8b2f2715fa0f417e87c15e4ae712.svg",
+    "static/media/close-icon.svg": "/simple-one-test/static/media/close-icon.559bf661966c442b584c740cb0071b18.svg",
+    "static/media/no-pin-icon.svg": "/simple-one-test/static/media/no-pin-icon.085e958591905fd7efb87bf1ba6a098b.svg",
+    "index.html": "/simple-one-test/index.html",
+    "static/media/sidebar-icon-dark.svg": "/simple-one-test/static/media/sidebar-icon-dark.279b1e3196238f0042fafee470cf4b41.svg",
+    "static/media/sidebar-icon.svg": "/simple-one-test/static/media/sidebar-icon.cf6bb9a342d083231119badc1ed638d3.svg",
+    "main.a909064e.css.map": "/simple-one-test/static/css/main.a909064e.css.map",
+    "main.473f477c.js.map": "/simple-one-test/static/js/main.473f477c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a909064e.css",
+    "static/js/main.473f477c.js"
+  ]
+}
